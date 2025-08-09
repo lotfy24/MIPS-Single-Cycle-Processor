@@ -1,16 +1,15 @@
 module MIPS(clk, rst_n);
 // Inputs
-(* dont_touch = "true" *)  input clk, rst_n;
+input clk, rst_n;
 
-// Internal Wires ((* dont_touch = "true" *)) for vivado to prevent it from optimization
-(* dont_touch = "true" *)  wire [31:0] Instruction, PC_IN, write_data, PC_next, ALU_Result, Read_Data;
-(* dont_touch = "true" *)  wire [31:0] PC_Plus_4, Read_Data_1, Read_Data_2, Ex_out, Main_ALU_in_2, Branch_out;
-(* dont_touch = "true" *)  wire [4:0] Write_Reg;
-(* dont_touch = "true" *)  wire [2:0] ALU_OP;
-(* dont_touch = "true" *)  wire [1:0] data_size;
-(* dont_touch = "true" *)  wire [3:0] ALU_control_Lines;
-(* dont_touch = "true" *)  wire Reg_Dst,Jump,Branch,Mem_Read,Mem_To_Reg,Mem_Write,ALU_Src;
-(* dont_touch = "true" *)  wire Reg_Write,Branch_Not_Equal,Z_Flag,return_addr,ext_type;
+wire [31:0] Instruction, PC_IN, write_data, PC_next, ALU_Result, Read_Data;
+wire [31:0] PC_Plus_4, Read_Data_1, Read_Data_2, Ex_out, Main_ALU_in_2, Branch_out;
+wire [4:0] Write_Reg;
+wire [2:0] ALU_OP;
+wire [1:0] data_size;
+wire [3:0] ALU_control_Lines;
+wire Reg_Dst,Jump,Branch,Mem_Read,Mem_To_Reg,Mem_Write,ALU_Src;
+wire Reg_Write,Branch_Not_Equal,Z_Flag,return_addr,ext_type;
 
 // Control unit
 Control_Unit Ctr_Block(Instruction[31:26],Reg_Dst,Jump,Branch,Mem_Read,Mem_To_Reg,ALU_OP,Mem_Write,ALU_Src,Reg_Write,Branch_Not_Equal,return_addr,data_size,ext_type);

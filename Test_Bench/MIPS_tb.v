@@ -340,10 +340,6 @@ module MIPS_Prossesor_tb();
                     expected_output = expected_PC + 4; 
                     expected_PC = {expected_PC[31:28], Jumb_address, 2'b00};
                     @(negedge clk_tb);
-                    /*if(expected_output !=DUT.Reg_File_Block.reg_file[31])begin
-                       $display("Error in JAL instruction");
-                        $stop;
-                    end*/
                     if (expected_PC != DUT.PC_Block.PC_next) begin
                         $display("Mismatch in program counter at JAL instruction");
                         $stop;

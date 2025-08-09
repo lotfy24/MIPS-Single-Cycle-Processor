@@ -19,7 +19,7 @@ always @(*) begin
                 6'b101_010: ALU_Instruction = 4'b0111; //SLT (7)
                 6'b000_011: ALU_Instruction = 4'b0101; //SRA (5)
                 6'b000_010: ALU_Instruction = 4'b1000; //SRL (8)
-                default: ALU_Instruction = 4'b1111;    //UNSupported Instruction
+                default: ALU_Instruction = 4'b1111;    //UNSUPPORTED INSTRUCTIONS
             endcase
         end
         3'b011: ALU_Instruction = 4'b0000; //ANDI (0)

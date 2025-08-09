@@ -31,11 +31,11 @@ always @(*) begin
         endcase
     end
     else begin
-        rd_Data = 32'b0 ;   // To prevent latch 
+        rd_Data = 32'b0 ;   // To avoid latch 
     end
 end
 // Write Operation
-always @(posedge clk) begin     // latch will not be interfered because latches interfered with combinational block only 
+always @(posedge clk) begin   
     if (Mem_Write) begin    
         case (data_size)
             2'b01:begin
