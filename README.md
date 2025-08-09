@@ -18,7 +18,7 @@ This repository contains the RTL design and testbench for a **Single-Cycle MIPS 
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 
 | Path | Description |
 |------|-------------|
@@ -77,22 +77,6 @@ This repository contains the RTL design and testbench for a **Single-Cycle MIPS 
 
 ---
 
-## ⚙️ Getting Started
-
-### Requirements
-
-- Verilog simulator (ModelSim, Questa, Vivado Simulator, etc.)
-- Basic understanding of MIPS ISA and Verilog
-
-### How to Simulate
-
-1. Load the design files and testbench into your simulator.
-2. Load the memory initialization files (`Imem.dat`, `Dmem.dat`, and `register_file.dat`).
-3. Run the provided `MIPS_Processor.do` simulation script (for ModelSim/Questa).
-4. Observe the simulation outputs and verify correctness.
-
----
-
 ## 🧪 Testbench
 
 The testbench (`MIPS_Processor_tb.v`) initializes memories, drives the clock and reset, and runs through the instruction memory. It checks the output of each instruction against expected values, including register contents and program counter updates. The testbench supports verification of:
@@ -109,8 +93,4 @@ The testbench (`MIPS_Processor_tb.v`) initializes memories, drives the clock and
 For any questions or contributions, please contact:
 
 **Mohamed Lotfy**  
-Email: lotfy24@example.com
-
----
-
-Thank you for exploring this Single-Cycle MIPS Processor! Feel free to fork and improve it. 🚀
+Email: mohamedlotfyyy24@gmail.com
