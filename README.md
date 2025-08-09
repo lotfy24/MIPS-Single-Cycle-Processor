@@ -1,8 +1,7 @@
 # 🚀 Single-Cycle MIPS Processor
 ---
 <img width="1199" height="679" alt="image" src="https://github.com/user-attachments/assets/0ecb3c32-5f18-4322-ab07-93d6446bdfd8" />
-This single-cycle MIPS processor is designed based on the classic MIPS instruction set architecture, similar to the reference diagram commonly taught in Computer Organization courses,my implementation supports a much broader set of instructions beyond those shown in the picture.
-
+This single-cycle MIPS processor follows the architecture in Computer Organization and Design, 5th Edition by Patterson and Hennessy, but supports more instructions than the textbook’s basic diagrams.
 
 ## 📚 Project Overview
 
