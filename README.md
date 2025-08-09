@@ -18,33 +18,29 @@ This repository contains the RTL design and testbench for a **Single-Cycle MIPS 
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
-├── Design/ # RTL source files
-│ ├── ALU_Control.v
-│ ├── ALU.v
-│ ├── Branch_Block.v
-│ ├── Control_Unit.v
-│ ├── Data_Memory.v
-│ ├── Extention.v
-│ ├── instruction_mem.v
-│ ├── Jump_Block.v
-│ ├── Main_ALU.v
-│ ├── MIPS.v
-│ ├── mux_2_1.v
-│ ├── PC_Adder.v
-│ ├── Program_Counter.v
-│ └── Register_File.v
-├── Test_Bench/ # Testbench files and memory initialization files
-│ ├── MIPS_Processor_tb.v
-│ ├── Imem.dat
-│ ├── Dmem.dat
-│ └── register_file.dat
-└── MIPS_Processor.do # Simulation script for ModelSim/Questa or similar
-
-yaml
-Copy
-Edit
+| Path | Description |
+|------|-------------|
+| **Design/ALU_Control.v** | ALU control logic module |
+| **Design/ALU.v** | Arithmetic Logic Unit implementation |
+| **Design/Branch_Block.v** | Branch decision logic |
+| **Design/Control_Unit.v** | Main control unit for instruction decoding |
+| **Design/Data_Memory.v** | Data memory module |
+| **Design/Extention.v** | Sign/zero extension unit |
+| **Design/instruction_mem.v** | Instruction memory module |
+| **Design/Jump_Block.v** | Jump instruction handling logic |
+| **Design/Main_ALU.v** | Main ALU integrating operations |
+| **Design/MIPS.v** | Top-level MIPS processor module |
+| **Design/mux_2_1.v** | 2-to-1 multiplexer |
+| **Design/PC_Adder.v** | Program counter incrementer |
+| **Design/Program_Counter.v** | Program counter register |
+| **Design/Register_File.v** | CPU register file |
+| **Test_Bench/MIPS_Processor_tb.v** | Testbench for the MIPS processor |
+| **Test_Bench/Imem.dat** | Instruction memory initialization data |
+| **Test_Bench/Dmem.dat** | Data memory initialization data |
+| **Test_Bench/register_file.dat** | Register file initialization data |
+| **MIPS_Processor.do** | Simulation script for ModelSim/Questa |
 
 ---
 
