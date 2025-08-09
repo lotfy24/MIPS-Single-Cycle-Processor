@@ -1,5 +1,7 @@
 # 🚀 Single-Cycle MIPS Processor
 
+<img width="1199" height="679" alt="image" src="https://github.com/user-attachments/assets/0ecb3c32-5f18-4322-ab07-93d6446bdfd8" />
+This single-cycle MIPS processor is designed based on the classic MIPS instruction set architecture, similar to the reference diagram commonly taught in Computer Organization courses,my implementation supports a much broader set of instructions beyond those shown in the picture
 ## 📚 Project Overview
 
 This repository contains the RTL design and testbench for a **Single-Cycle MIPS Processor** implemented in Verilog. The design supports a comprehensive subset of MIPS instructions covering R-type, I-type, and J-type formats. The processor executes instructions in a single clock cycle and includes instruction memory, data memory, register file, ALU, and control logic.
